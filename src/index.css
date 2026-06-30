@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #fdfcf8;
+  --color-pastel-purple: #d4bfff;
+  --color-pastel-teal: #a8e6cf;
+  --color-pastel-pink: #fec8d8;
+}
+
+body {
+  background-color: var(--color-cream);
+  user-select: none;
+}
+
+@keyframes animateVisitedCell {
+  0% { background-color: var(--color-pastel-purple); scale: 0; }
+  50% { background-color: #b4f8c8; scale: 0.5; }
+  100% { background-color: var(--color-pastel-teal); scale: 1; }
+}
+
+@keyframes animateWall {
+  0% { background-color: #94a3b8; scale: 0; }
+  50% { background-color: #94a3b8; scale: 1.2; }
+  100% { background-color: #94a3b8; scale: 1; }
+}
+
+@keyframes animateWeight {
+  0% { background-color: var(--color-pastel-pink); scale: 0; }
+  50% { background-color: var(--color-pastel-pink); scale: 1.2; }
+  100% { background-color: var(--color-pastel-pink); scale: 1; }
+}
